@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Careers at ARCUS | Join Our Team in Guntur, AP</title>
+  <meta name="description"
+    content="Join ARCUS — a premier IT company in Guntur, Andhra Pradesh. Explore open positions in web development, UI/UX design, digital marketing and business development. Apply now.">
+  <meta name="keywords"
+    content="ARCUS careers, jobs in Guntur IT company, web developer jobs Guntur, UI UX designer jobs Andhra Pradesh, digital marketing jobs Guntur, BDE jobs Guntur, ARCUS hiring">
+  <meta name="author" content="ARCUS">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="geo.region" content="IN-AP">
+  <meta name="geo.placename" content="Guntur, Andhra Pradesh, India">
+  <meta name="geo.position" content="16.3067;80.4365">
+  <meta name="ICBM" content="16.3067, 80.4365">
+  <link rel="canonical" href="https://www.arcus.ai/careers.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.arcus.ai/careers.html">
+  <meta property="og:site_name" content="ARCUS">
+  <meta property="og:title" content="Careers at ARCUS | Join Our Team">
+  <meta property="og:description"
+    content="We're hiring! Join ARCUS in Guntur — open roles in web development, UI/UX, digital marketing & business development.">
+  <meta property="og:image" content="https://www.arcus.ai/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Careers at ARCUS | Join Our Team">
+  <meta name="twitter:description"
+    content="We're hiring in Guntur! Open roles in web dev, UI/UX, digital marketing & more.">
+  <meta name="twitter:image" content="https://www.arcus.ai/og-image.jpg">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#0F172A">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ARCUS",
+      "url": "https://www.arcus.ai",
+      "logo": "https://www.arcus.ai/logo.png",
+      "email": "paletidhanush0@gmail.com",
+      "telephone": "+919398874337",
+      "founder": {
+        "@type": "Person",
+        "name": "Dhanush Sai Paleti",
+        "jobTitle": "Founder & CEO"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Door No. 3-46, Ponnekallu Village, Tadikonda Mandal",
+        "addressLocality": "Guntur District",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "522513",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "paletidhanush0@gmail.com",
+        "telephone": "+919398874337",
+        "contactType": "HR / Careers",
+        "availableLanguage": ["English", "Hindi", "Telugu"]
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+
+  <style>
+    :root {
+      --primary: #0F172A;
+      --accent: #2563EB;
+      --secondary: #10B981;
+      --bg: #FAFDFB;
+      --white: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: auto
+    }
+
+    html.lenis {
+      height: auto
+    }
+
+    .lenis-smooth {
+      scroll-behavior: auto !important
+    }
+
+    .lenis-stopped {
+      overflow: hidden
+    }
+
+    @media(max-width:768px) {
+      .lenis-stopped {
+        overflow-y: auto
+      }
+
+      html,
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        height: auto
+      }
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.5
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Outfit', sans-serif
+    }
+
+    /* ── CANVAS BG ── */
+    #webgl-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none
+    }
+
+    .grain-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      pointer-events: none;
+      opacity: .04;
+      background-image: url("https://grainy-gradients.vercel.app/noise.svg")
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 500;
+      transition: background .4s, box-shadow .4s
+    }
+
+    nav.scrolled {
+      background: rgba(248, 250, 252, 0.9);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 rgba(15, 23, 42, .06)
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--primary);
+      height: 44px;
+    }
+
+    .logo-img {
+      height: 44px;
+      width: auto;
+      object-fit: contain
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      list-style: none
+    }
+
+    .nav-links a {
+      font-family: 'Outfit', sans-serif;
+      font-size: .85rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color .3s;
+      position: relative
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--accent);
+      transition: width .3s
+    }
+
+    .nav-links a:hover {
+      color: var(--primary)
+    }
+
+    .nav-links a:hover::after {
+      width: 100%
+    }
+
+    .nav-cta {
+      background: var(--accent) !important;
+      color: #fff !important;
+      padding: .55rem 1.4rem;
+      border-radius: 50px;
+      transition: all .3s !important
+    }
+
+    .nav-cta:hover {
+      background: var(--primary) !important;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, .3)
+    }
+
+    .nav-cta::after {
+      display: none !important
+    }
+
+    @media(max-width:768px) {
+      nav {
+        padding: 1.2rem 1.5rem
+      }
+
+      .nav-links {
+        display: none
+      }
+
+      .nav-mobile-cta {
+        display: flex;
+        align-items: center;
+        gap: .8rem
+      }
+    }
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: all .3s
+    }
+
+    @media(max-width:768px) {
+      .hamburger {
+        display: flex
+      }
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 75%;
+      max-width: 320px;
+      height: 100%;
+      background: var(--white);
+      z-index: 600;
+      padding: 5rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transition: right .4s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, .08)
+    }
+
+    .mobile-menu.open {
+      right: 0
+    }
+
+    .mobile-menu a {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      padding: .6rem 0;
+      border-bottom: 1px solid rgba(15, 23, 42, .06)
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .4);
+      z-index: 550;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s
+    }
+
+    .mobile-overlay.open {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    /* ── SECTION BASE ── */
+    .section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem;
+      width: 100%
+    }
+
+    /* ── SERVICES & HEADERS ── */
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+      max-width: 700px
+    }
+
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.15;
+      margin-bottom: 1.2rem
+    }
+
+    .section-title em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--accent), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7
+    }
+
+    /* ── CAREER CARDS ── */
+    #careers {
+      background: linear-gradient(180deg, transparent, rgba(16, 185, 129, .02) 50%, transparent);
+      min-height: auto !important;
+      padding: 8rem 2rem 5rem !important;
+    }
+
+    .careers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 1000px;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .career-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 2.2rem;
+      backdrop-filter: blur(16px);
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      transition: all .4s;
+      opacity: 0;
+      transform: translateY(30px)
+    }
+
+    .career-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, .08);
+      border-color: rgba(37, 99, 235, .2)
+    }
+
+    .career-tag {
+      display: inline-block;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: rgba(37, 99, 235, .08);
+      color: var(--accent);
+      padding: .35rem .9rem;
+      border-radius: 50px
+    }
+
+    .career-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary)
+    }
+
+    .career-details {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap
+    }
+
+    .career-detail {
+      font-size: .8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      background: rgba(15, 23, 42, 0.03);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+    }
+
+    .career-detail::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--secondary);
+      display: inline-block
+    }
+
+    .career-apply {
+      margin-top: .5rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: .65rem 1.6rem;
+      border-radius: 50px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: .82rem;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all .3s;
+      text-decoration: none;
+      display: inline-block;
+      align-self: flex-start
+    }
+
+    .career-apply:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, .3)
+    }
+
+    .careers-cta {
+      margin-top: 3rem;
+      text-align: center
+    }
+
+    @media(max-width:850px) {
+      .careers-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--primary);
+      color: rgba(255, 255, 255, .7);
+      padding: 0
+    }
+
+    .footer-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5rem 4rem 3rem;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem
+    }
+
+    .footer-brand .logo-img {
+      height: 38px;
+      margin-bottom: 1.2rem
+    }
+
+    .footer-brand-name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: .8rem
+    }
+
+    .footer-brand-desc {
+      font-size: .85rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, .4);
+      margin-bottom: 1.5rem
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: .75rem
+    }
+
+    .footer-soc {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .4);
+      text-decoration: none;
+      transition: all .3s;
+      font-size: .8rem
+    }
+
+    .footer-soc:hover {
+      border-color: var(--secondary);
+      color: var(--secondary);
+      box-shadow: 0 0 12px rgba(16, 185, 129, .25)
+    }
+
+    .footer-soc svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor
+    }
+
+    .footer-col-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: .8rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.4rem
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem
+    }
+
+    .footer-links a {
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .4);
+      text-decoration: none;
+      transition: color .3s
+    }
+
+    .footer-links a:hover {
+      color: var(--secondary)
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem
+    }
+
+    .footer-copy {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .25)
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 2rem
+    }
+
+    .footer-legal a {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .25);
+      text-decoration: none;
+      transition: color .3s
+    }
+
+    .footer-legal a:hover {
+      color: rgba(255, 255, 255, .6)
+    }
+
+    @media(max-width:1024px) {
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem
+      }
+    }
+
+    @media(max-width:640px) {
+      .footer-main {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem 2rem
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem
+      }
+
+      .footer-legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem
+      }
+    }
+
+    /* ── SECTION DIVIDERS ── */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--secondary));
+      border-radius: 2px;
+      margin: 0 auto 3rem;
+      opacity: 0
+    }
+
+    /* ── ANIMATION HELPERS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    /* ── 320px RESPONSIVENESS ── */
+    @media(max-width:380px) {
+      nav {
+        padding: 1rem 1.2rem;
+      }
+
+      .logo-img {
+        height: 36px;
+      }
+
+      .section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+
+      #careers {
+        padding: 6rem 1rem 3.5rem !important;
+      }
+
+      .section-header {
+        padding: 0 0.5rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.4rem, 6vw, 2rem) !important;
+      }
+
+      .section-desc {
+        font-size: 0.82rem !important;
+      }
+
+      .career-card {
+        padding: 1.5rem 1.2rem !important;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 2.5rem 1rem !important;
+      }
+
+      .footer-bottom {
+        padding: 1rem !important;
+      }
+
+      .footer-copy {
+        font-size: 0.7rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grain-overlay"></div>
+  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+
+  <!-- ── NAV ── -->
+  <header role="banner">
+    <nav id="main-nav" role="navigation" aria-label="Main Navigation">
+      <a href="index.html" class="logo" title="ARCUS">
+        <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-img">
+          <path d="M22 6 L8 34 H15 L18 27 H26 L29 34 H36 Z" fill="url(#logo-grad-1)" />
+          <path d="M19.5 23 L22 17.5 L24.5 23 Z" fill="#FFFFFF" />
+          <path d="M4 27 C12 36, 32 36, 40 27" stroke="url(#logo-grad-2)" stroke-width="2" stroke-linecap="round" />
+          <text x="52" y="28" font-family="'Outfit', sans-serif" font-weight="900" font-size="22" fill="#0F172A"
+            letter-spacing="3.5">ARCUS</text>
+          <defs>
+            <linearGradient id="logo-grad-1" x1="8" y1="6" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#06B6D4" />
+            </linearGradient>
+            <linearGradient id="logo-grad-2" x1="4" y1="27" x2="40" y2="27" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#06B6D4" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#clients">Clients</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="careers.html" style="color: var(--accent);">Careers</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-mobile-cta">
+        <button class="hamburger" aria-label="Menu" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" id="mob-overlay"></div>
+  <div class="mobile-menu" id="mob-menu">
+    <a href="index.html#about" onclick="closeMob()">About Us</a>
+    <a href="index.html#services" onclick="closeMob()">Services</a>
+    <a href="index.html#clients" onclick="closeMob()">Clients</a>
+    <a href="index.html#testimonials" onclick="closeMob()">Testimonials</a>
+    <a href="careers.html" style="color: var(--accent);" onclick="closeMob()">Careers</a>
+    <a href="index.html#contact" onclick="closeMob()">Contact Us</a>
+  </div>
+
+  <main role="main">
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         CAREERS — Job listings
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <section class="section" id="careers" aria-label="Careers at ARCUS">
+      <div class="section-header reveal">
+        <span class="section-label">Join Our Team</span>
+        <h1 class="section-title">Build the Future <em>With Us</em></h1>
+        <p class="section-desc">We're a team that values curiosity, craft, and ambition. If you love what you do, we
+          want to hear from you.</p>
+      </div>
+      <div class="divider"></div>
+
+      <div class="careers-grid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+      <div class="careers-cta reveal">
+        <p style="color:var(--text-muted);margin-bottom:1.2rem;font-size:.95rem">Don't see your role? We're always
+          looking for great talent.</p>
+        <a href="mailto:paletidhanush0@gmail.com" class="btn-primary">Send Open Application →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FOOTER
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-img footer-brand-img"
+          style="height:38px;margin-bottom:1rem">
+          <path d="M22 6 L8 34 H15 L18 27 H26 L29 34 H36 Z" fill="url(#logo-grad-footer)" />
+          <path d="M19.5 23 L22 17.5 L24.5 23 Z" fill="#FFFFFF" />
+          <path d="M4 27 C12 36, 32 36, 40 27" stroke="url(#logo-grad-footer)" stroke-width="2"
+            stroke-linecap="round" />
+          <text x="52" y="28" font-family="'Outfit', sans-serif" font-weight="900" font-size="22" fill="#FFFFFF"
+            letter-spacing="3.5">ARCUS</text>
+          <defs>
+            <linearGradient id="logo-grad-footer" x1="8" y1="6" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#10B981" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <p class="footer-brand-desc">Empowering brands through technology and creativity. Premium IT solutions from
+          Guntur, Andhra Pradesh.</p>
+        <div class="footer-socials">
+          <a class="footer-soc" href="#" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.003z" />
+            </svg>
+          </a>
+          <a class="footer-soc" href="#" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a class="footer-soc" href="#" title="Twitter / X" aria-label="Twitter">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a class="footer-soc" href="mailto:paletidhanush0@gmail.com" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#clients">Clients</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="careers.html" style="color: var(--accent);">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="index.html#services">Web Development</a></li>
+          <li><a href="index.html#services">App Development</a></li>
+          <li><a href="index.html#services">UI / UX Design</a></li>
+          <li><a href="index.html#services">Digital Marketing</a></li>
+          <li><a href="index.html#services">Branding</a></li>
+          <li><a href="index.html#services">Tech Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="mailto:paletidhanush0@gmail.com">paletidhanush0@gmail.com</a></li>
+          <li><a href="tel:+919398874337">+91 93988 74337</a></li>
+          <li><a href="index.html#contact">Send a Message</a></li>
+          <li><span style="color:rgba(255,255,255,.25);font-size:0.8rem;line-height:1.6">Door No. 3-46, Ponnekallu Village,<br>Tadikonda Mandal, Guntur District,<br>Andhra Pradesh, India.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" itemprop="copyrightHolder">© 2026 ARCUS — Guntur, Andhra Pradesh, India. All rights
+        reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── LENIS SMOOTH SCROLL ───────────────────────────────────────
+    const isMobile = window.innerWidth <= 768;
+    const lenis = new Lenis({ smoothTouch: false, touchMultiplier: isMobile ? 0 : 2 });
+    function rafLenis(t) { lenis.raf(t); requestAnimationFrame(rafLenis); }
+    requestAnimationFrame(rafLenis);
+
+    // ─── MOBILE MENU ──────────────────────────────────────────────
+    const ham = document.getElementById('hamburger');
+    const mobMenu = document.getElementById('mob-menu');
+    const mobOverlay = document.getElementById('mob-overlay');
+    function closeMob() { mobMenu.classList.remove('open'); mobOverlay.classList.remove('open'); }
+    ham.addEventListener('click', () => { mobMenu.classList.toggle('open'); mobOverlay.classList.toggle('open'); });
+    mobOverlay.addEventListener('click', closeMob);
+
+    // ─── NAV SCROLL EFFECT ────────────────────────────────────────
+    const mainNav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      mainNav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ─── THREE.JS BACKGROUND ──────────────────────────────────────
+    const canvas = document.getElementById('webgl-canvas');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 6;
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); scene.add(ambientLight);
+    const pointLight = new THREE.PointLight(0x2563EB, 2); pointLight.position.set(5, 5, 5); scene.add(pointLight);
+    const pointLight2 = new THREE.PointLight(0x10B981, 1.5); pointLight2.position.set(-5, -5, 5); scene.add(pointLight2);
+
+    // Particles
+    const particlesCount = 2000;
+    const positions = new Float32Array(particlesCount * 3);
+    const colors = new Float32Array(particlesCount * 3);
+    for (let i = 0; i < particlesCount * 3; i++) { positions[i] = (Math.random() - .5) * 25; colors[i] = Math.random(); }
+    const particlesGeometry = new THREE.BufferGeometry();
+    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    const particlesMaterial = new THREE.PointsMaterial({ size: .04, vertexColors: true, transparent: true, opacity: .5, blending: THREE.AdditiveBlending });
+    const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+    scene.add(particles);
+
+    // Main wireframe mesh
+    const geoType = Math.random() > .5 ? new THREE.IcosahedronGeometry(2, 1) : new THREE.TorusKnotGeometry(1.2, .4, 100, 16);
+    const material = new THREE.MeshPhongMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: .15, shininess: 100 });
+    const mainMesh = new THREE.Mesh(geoType, material); scene.add(mainMesh);
+
+    // Floaters
+    const floatingGroup = new THREE.Group(); scene.add(floatingGroup);
+    const floaters = [];
+    for (let i = 0; i < 20; i++) {
+      const size = Math.random() * .3 + .05;
+      const g = new THREE.OctahedronGeometry(size, 0);
+      const m = new THREE.MeshPhongMaterial({ color: Math.random() > .5 ? 0x2563EB : 0x10B981, transparent: true, opacity: .4 });
+      const b = new THREE.Mesh(g, m);
+      b.position.set((Math.random() - .5) * 12, (Math.random() - .5) * 12, (Math.random() - .5) * 10 - 5);
+      floatingGroup.add(b);
+      floaters.push({ mesh: b, speed: Math.random() * .005 + .002, rot: Math.random() * .02 });
+    }
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // ─── GSAP ─────────────────────────────────────────────────────
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ─── INTERSECTION OBSERVER — Section reveals ──────────────────
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // ─── DIVIDER animate ─────────────────────────────────────────
+    gsap.utils.toArray('.divider').forEach(d => {
+      gsap.to(d, {
+        opacity: 1, scaleX: 1, duration: .8, ease: 'power2.out',
+        scrollTrigger: { trigger: d, start: 'top 90%', once: true }
+      });
+    });
+
+    // ─── MOUSE PARALLAX ──────────────────────────────────────────
+    let mouseX = 0, mouseY = 0;
+    window.addEventListener('mousemove', (e) => {
+      mouseX = (e.clientX - window.innerWidth / 2) / 150;
+      mouseY = (e.clientY - window.innerHeight / 2) / 150;
+    }, { passive: true });
+
+    // ─── MAIN RENDER LOOP ─────────────────────────────────────────
+    function animate() {
+      requestAnimationFrame(animate);
+      mainMesh.rotation.x += .003; mainMesh.rotation.y += .003;
+      camera.position.x += (mouseX - camera.position.x) * .05;
+      camera.position.y += (-mouseY - camera.position.y) * .05;
+      camera.lookAt(scene.position);
+      particles.rotation.y += .0005;
+      floaters.forEach(f => {
+        f.mesh.rotation.x += f.rot; f.mesh.rotation.y += f.rot;
+        f.mesh.position.y += Math.sin(Date.now() * .001 * f.speed * 100) * .005;
+      });
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    // 🛠️ EDIT JOB OPENINGS HERE:
+    // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    const jobListings = [
+      {
+        type: "Full-Time",
+        title: "Senior Frontend Engineer (Creative/WebGL)",
+        desc: "We are seeking a highly skilled Senior Frontend Engineer with experience in Three.js, GSAP, and creative web animations. You will build world-class web applications and interactive landing pages that leave a lasting impression.",
+        details: ["Guntur, AP", "5+ Years Exp", "React · WebGL"],
+        applySubject: "Senior Frontend Engineer Application"
+      },
+      {
+        type: "Full-Time",
+        title: "Senior Full-Stack Developer (Node.js/Postgres)",
+        desc: "Join our core engineering team to build scalable APIs, database architectures, and robust SaaS solutions. Experience with Node.js, Express, Postgres, and cloud environments is highly valued.",
+        details: ["Guntur, AP", "4+ Years Exp", "Full-Stack · Backend"],
+        applySubject: "Senior Full-Stack Developer Application"
+      },
+      {
+        type: "Full-Time",
+        title: "UI/UX & Graphic Designer",
+        desc: "Looking for a creative UI/UX designer who can design stunning wireframes, responsive mobile interfaces, and clean corporate brand identities. Mastery of Figma and Adobe Suite is a must.",
+        details: ["Guntur, AP", "3+ Years Exp", "UI/UX · Figma"],
+        applySubject: "UI/UX Designer Application"
+      },
+      {
+        type: "Part-Time",
+        title: "Business Development Executive (BDE)",
+        desc: "Enthusiastic individual to join our team as a BDE. You will be responsible for lead generation, client outreach, and driving business growth. Perfect for those with strong communication skills and a passion for the IT industry.",
+        details: ["Guntur, AP", "Freshers Welcome", "BDE · IT Sales"],
+        applySubject: "Business Development Executive (BDE) Application"
+      }
+    ];
+
+    // Dynamically render listings into .careers-grid
+    function renderJobs() {
+      const container = document.querySelector('.careers-grid');
+      if (!container) return;
+      container.innerHTML = '';
+
+      jobListings.forEach((job, i) => {
+        const detailsHTML = job.details.map(det => `<span class="career-detail">${det}</span>`).join('');
+        const card = document.createElement('div');
+        card.className = 'career-card';
+        card.innerHTML = `
+          <div><span class="career-tag">${job.type}</span></div>
+          <h3 class="career-title">${job.title}</h3>
+          <p style="font-size:.88rem;color:var(--text-muted);line-height:1.6">${job.desc}</p>
+          <div class="career-details">
+            ${detailsHTML}
+          </div>
+          <a href="mailto:paletidhanush0@gmail.com?subject=${encodeURIComponent(job.applySubject)}" class="career-apply">Apply Now →</a>
+        `;
+        container.appendChild(card);
+
+        // Animate entrance via GSAP
+        gsap.to(card, {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          delay: i * 0.1,
+          ease: 'power2.out',
+          scrollTrigger: { trigger: card, start: 'top 85%', once: true }
+        });
+      });
+    }
+
+    // Call immediately
+    renderJobs();
+
+    // ─── ACTIVE NAV LINK highlight ───
+    const navAs = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    navAs.forEach(a => {
+      const href = a.getAttribute('href') || '';
+      if (href === 'careers.html') {
+        a.style.color = 'var(--accent)';
+      }
+    });
+    document.querySelectorAll('.mobile-menu a').forEach(a => {
+      if ((a.getAttribute('href') || '') === 'careers.html') {
+        a.style.color = 'var(--accent)';
+      }
+    });
+  </script>
+</body>
+
+</html>
