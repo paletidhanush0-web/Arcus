@@ -2117,6 +2117,241 @@
             transform: none !important;
             box-shadow: none !important;
         }
+
+        /* ── PORTFOLIO SECTION ── */
+        #portfolio {
+            padding: 8rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 2rem;
+            width: 100%;
+            margin-bottom: 3rem;
+            padding: 0 2rem;
+        }
+
+        .portfolio-header-wrapper .section-header {
+            text-align: left;
+            margin-bottom: 0;
+            max-width: 700px;
+        }
+
+        .portfolio-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .portfolio-filter-select-wrapper {
+            position: relative;
+            min-width: 180px;
+        }
+
+        .portfolio-filter-select-wrapper select {
+            width: 100%;
+            padding: 0.85rem 2.5rem 0.85rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            appearance: none;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-filter-select-wrapper select:hover {
+            border-color: rgba(34, 64, 150, 0.4);
+            background: rgba(10, 42, 77, 0.8);
+        }
+
+        .portfolio-filter-arrow {
+            position: absolute;
+            right: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .portfolio-see-all {
+            padding: 0.85rem 2rem;
+            background: var(--primary);
+            color: var(--bg);
+            border: none;
+            border-radius: 50px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .portfolio-see-all:hover {
+            background: var(--secondary);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(98, 176, 228, 0.4);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1200px;
+            padding: 3rem 2rem;
+            justify-content: center;
+        }
+
+        .portfolio-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+            opacity: 0;
+            transform: translateY(40px);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .4s ease;
+            border-radius: 28px 28px 0 0;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(5, 32, 62, .25);
+            border-color: rgba(98, 176, 228, 0.3);
+        }
+
+        .portfolio-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .portfolio-img-wrap {
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            position: relative;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .portfolio-card:hover .portfolio-img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            padding: 0 0.5rem;
+        }
+
+        .portfolio-card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-card-title {
+            color: var(--secondary);
+        }
+
+        .portfolio-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .portfolio-badge {
+            background: rgba(34, 64, 150, 0.15);
+            border: 1px solid rgba(34, 64, 150, 0.3);
+            color: var(--secondary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0.35rem 0.8rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-badge {
+            background: rgba(98, 176, 228, 0.15);
+            border-color: rgba(98, 176, 228, 0.4);
+            color: var(--primary);
+        }
+
+        @media(max-width: 768px) {
+            .portfolio-header-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 1.5rem;
+            }
+            .portfolio-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .portfolio-filter-select-wrapper {
+                flex: 1;
+            }
+            .portfolio-grid {
+                padding: 2rem 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
     </style>
 </head>
 
@@ -2135,6 +2370,7 @@
             <ul class="nav-links" role="list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
                 <li><a href="#clients">Clients</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="careers.html">Careers</a></li>
@@ -2153,6 +2389,7 @@
     <div class="mobile-menu" id="mob-menu">
         <a href="#about" onclick="closeMob()">About Us</a>
         <a href="#services" onclick="closeMob()">Services</a>
+        <a href="#portfolio" onclick="closeMob()">Work</a>
         <a href="#clients" onclick="closeMob()">Clients</a>
         <a href="#testimonials" onclick="closeMob()">Testimonials</a>
         <a href="careers.html" onclick="closeMob()">Careers</a>
@@ -2321,6 +2558,79 @@
                     <h3 class="service-name" itemprop="name">Social Media & Video Production</h3>
                     <p class="service-desc" itemprop="description">Engaging brand page management, high-impact Instagram Reels/videos, creative poster/graphics design, and customized content strategies that drive massive followings.</p>
                 </article>
+            </div>
+        </section>
+
+        <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+             PORTFOLIO — Selected Work
+        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+        <section class="section" id="portfolio" aria-label="ARCUS Portfolio">
+            <div class="portfolio-header-wrapper">
+                <div class="section-header reveal-left">
+                    <span class="section-label">Selected Work</span>
+                    <h2 class="section-title">Recent Products We've <em>Shipped</em></h2>
+                    <p class="section-desc">Explore our project portfolio — from E-commerce platforms to custom dashboards — each one shipped end-to-end.</p>
+                </div>
+                <div class="portfolio-actions reveal-right">
+                    <div class="portfolio-filter-select-wrapper">
+                        <select id="portfolio-filter" aria-label="Filter Projects">
+                            <option value="all">All Projects</option>
+                            <option value="ecommerce">E-Commerce</option>
+                            <option value="booking">Travel Booking</option>
+                            <option value="webapp">Web Application</option>
+                        </select>
+                        <div class="portfolio-filter-arrow">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </div>
+                    </div>
+                    <a href="#portfolio" class="portfolio-see-all">See All</a>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="portfolio-grid">
+                <a href="https://www.om-naturals.com/" target="_blank" rel="noopener" class="portfolio-card" data-category="ecommerce">
+                    <div class="portfolio-img-wrap">
+                        <img src="om-naturals.png" alt="OM Naturals E-commerce Showcase" class="portfolio-img" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-card-title">OM Naturals</h3>
+                        <div class="portfolio-badges">
+                            <span class="portfolio-badge">E-Commerce</span>
+                            <span class="portfolio-badge">Shipped</span>
+                            <span class="portfolio-badge">Live</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.tsboattourism.org/" target="_blank" rel="noopener" class="portfolio-card" data-category="booking">
+                    <div class="portfolio-img-wrap">
+                        <img src="ts-boat-tourism.png" alt="TS Boat Tourism Booking Showcase" class="portfolio-img" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-card-title">TS Boat Tourism</h3>
+                        <div class="portfolio-badges">
+                            <span class="portfolio-badge">Travel Booking</span>
+                            <span class="portfolio-badge">Shipped</span>
+                            <span class="portfolio-badge">Live</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://my-hostel-web-six.vercel.app/" target="_blank" rel="noopener" class="portfolio-card" data-category="webapp">
+                    <div class="portfolio-img-wrap">
+                        <img src="my-hostel.png" alt="MyHostel Management System Showcase" class="portfolio-img" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-card-title">MyHostel</h3>
+                        <div class="portfolio-badges">
+                            <span class="portfolio-badge">Web Application</span>
+                            <span class="portfolio-badge">Shipped</span>
+                            <span class="portfolio-badge">Live</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -2877,6 +3187,52 @@
                 scrollTrigger: { trigger: card, start: 'top 88%', once: true }
             });
         });
+
+        // ─── PORTFOLIO CARDS stagger ──────────────────────────────────
+        gsap.utils.toArray('.portfolio-card').forEach((card, i) => {
+            gsap.to(card, {
+                opacity: 1, y: 0, duration: .8, delay: i * .1, ease: 'power2.out',
+                scrollTrigger: { trigger: card, start: 'top 88%', once: true }
+            });
+        });
+
+        // ─── PORTFOLIO FILTER dropdown active interaction ─────────────
+        const filterSelect = document.getElementById('portfolio-filter');
+        if (filterSelect) {
+            filterSelect.addEventListener('change', (e) => {
+                const val = e.target.value;
+                const cards = document.querySelectorAll('.portfolio-card');
+                
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (val === 'all' || category === val) {
+                        gsap.killTweensOf(card);
+                        card.style.display = 'flex';
+                        gsap.to(card, {
+                            opacity: 1,
+                            scale: 1,
+                            y: 0,
+                            duration: 0.4,
+                            ease: 'power2.out',
+                            overwrite: 'auto'
+                        });
+                    } else {
+                        gsap.killTweensOf(card);
+                        gsap.to(card, {
+                            opacity: 0,
+                            scale: 0.9,
+                            y: 10,
+                            duration: 0.3,
+                            ease: 'power2.inOut',
+                            overwrite: 'auto',
+                            onComplete: () => {
+                                card.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+        }
 
         // ─── DIVIDER animate ─────────────────────────────────────────
         gsap.utils.toArray('.divider').forEach(d => {
