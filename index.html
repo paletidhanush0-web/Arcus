@@ -3345,31 +3345,50 @@
                     return;
                 }
 
+                // ── Collect form values for WhatsApp ──
+                const fname   = (document.getElementById('fname').value   || '').trim();
+                const lname   = (document.getElementById('lname').value   || '').trim();
+                const email   = (document.getElementById('email').value   || '').trim();
+                const phone   = (document.getElementById('phone').value   || '').trim();
+                const service = (document.getElementById('service').value || '').trim();
+                const message = (document.getElementById('message').value || '').trim();
+
+                const waText = [
+                    '🔔 *New Contact Form Submission — ARCUS*',
+                    '',
+                    `👤 *Name:* ${fname} ${lname}`,
+                    `📧 *Email:* ${email}`,
+                    phone   ? `📱 *Phone:* ${phone}`     : null,
+                    service ? `🛠️ *Service:* ${service}` : null,
+                    '',
+                    `💬 *Message:*\n${message}`
+                ].filter(l => l !== null).join('\n');
+
+                const waURL = 'https://wa.me/919398874337?text=' + encodeURIComponent(waText);
+                window.open(waURL, '_blank');
+
                 const btn = document.getElementById('form-submit-btn');
                 const orig = btn.innerHTML;
                 btn.innerHTML = '<span>Sending…</span>';
                 btn.disabled = true;
 
-                fetch('contact.php', { method: 'POST', body: new FormData(form) })
-                    .then(res => {
-                        if (!res.ok) throw new Error(res.status);
-                        form.reset();
-                        setEmailPhoneState('email', 'neutral');
-                        setEmailPhoneState('phone', 'neutral');
-                        ['fname', 'lname', 'message'].forEach(id => {
-                            const el = document.getElementById(id);
-                            if (el) el.style.borderColor = '';
-                        });
-                        btn.innerHTML = orig;
-                        btn.disabled = false;
-                        showSuccessPopup();
-                    })
-                    .catch(err => {
-                        console.error('Submission error:', err);
-                        btn.innerHTML = '<span>Something went wrong. Please try again.</span>';
-                        btn.style.background = 'linear-gradient(135deg,#ef4444,#b91c1c)';
-                        setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.disabled = false; }, 4000);
+                // ── Reset form and show success immediately (WhatsApp is primary delivery) ──
+                setTimeout(() => {
+                    form.reset();
+                    setEmailPhoneState('email', 'neutral');
+                    setEmailPhoneState('phone', 'neutral');
+                    ['fname', 'lname', 'message'].forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el) el.style.borderColor = '';
                     });
+                    btn.innerHTML = orig;
+                    btn.disabled = false;
+                    showSuccessPopup();
+                }, 800);
+
+                // ── Try PHP mailer silently in background (optional backup) ──
+                fetch('contact.php', { method: 'POST', body: new FormData(form) })
+                    .catch(() => { /* silent — WhatsApp is primary */ });
             });
         })();
 
