@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "./custom.css";
+
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+
+  --color-primary: #FFFFFF;
+  --color-accent: #224096;
+  --color-secondary: #62B0E4;
+  --color-bg: #05203E;
+  --color-white: #082A4D;
+  --color-text-main: #F1F5F9;
+  --color-text-muted: #94A3B8;
+  --color-glass-bg: rgba(10, 42, 77, 0.65);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+@media(max-width:768px) {
+  .lenis-stopped {
+    overflow-y: auto;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+  }
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: #05203E; /* matching --color-bg */
+  color: #F1F5F9; /* matching --color-text-main */
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+/* Three.js Canvas positioning */
+#webgl-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: .04;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* Custom Swiper Styles */
+.swiper {
+  width: 100%;
+  padding-bottom: 3rem !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.2) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #62B0E4 !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(10, 42, 77, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
