@@ -846,115 +846,170 @@
         /* ── TESTIMONIALS SWIPER ── */
         .testimonials-swiper {
             width: 100%;
-            max-width: 1200px;
-            padding: 2rem 0 4rem;
-            overflow: hidden;
+            max-width: 1300px;
+            padding: 3rem 1rem 4.5rem !important;
+            overflow: visible !important;
             position: relative;
+            perspective: 1200px;
         }
 
-        .testimonial-slide {
-            width: 350px;
+        .testimonials-swiper .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonials-swiper .swiper-slide {
+            width: 520px !important;
+            max-width: 82vw;
             height: auto;
-            min-height: 280px;
-            background: var(--glass-bg);
+            min-height: 270px;
+            background: rgba(8, 32, 62, 0.8) !important;
             backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 28px;
-            padding: 2.2rem;
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            border-radius: 24px !important;
+            padding: 2.5rem 2.2rem !important;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 1.2rem;
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.05);
-            transition: transform 0.3s;
+            gap: 1.4rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            opacity: 0.55;
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s ease;
+            box-sizing: border-box;
+        }
+
+        .testimonials-swiper .swiper-slide-active {
+            opacity: 1 !important;
+            border-color: rgba(98, 176, 228, 0.35) !important;
+            box-shadow: 0 25px 60px rgba(10, 40, 90, 0.4);
         }
 
         .testi-stars {
-            color: var(--accent);
-            font-size: 1rem;
-            letter-spacing: 3px
+            color: #62B0E4 !important;
+            font-size: 1.15rem;
+            letter-spacing: 4px;
         }
 
         .testi-text {
-            font-size: .95rem;
-            color: var(--text-muted);
-            line-height: 1.75;
+            font-size: 1.05rem;
+            color: #E2E8F0;
+            line-height: 1.7;
             font-style: italic;
-            flex: 1
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
         }
 
         .testi-text::before {
-            content: '\201C';
-            font-size: 2rem;
-            line-height: 0;
-            vertical-align: -.5em;
-            color: var(--accent);
-            opacity: .4;
-            margin-right: .2rem
+            content: '// ';
+            font-family: monospace, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #62B0E4;
+            margin-right: 0.4rem;
+            opacity: 0.9;
+            font-style: normal;
         }
 
         .testi-author {
             display: flex;
             align-items: center;
-            gap: .8rem;
-            margin-top: auto
+            gap: 1rem;
+            margin-top: auto;
         }
 
         .testi-avatar {
-            width: 44px;
-            height: 44px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            background: linear-gradient(135deg, #224096, #62B0E4);
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--font-outfit), sans-serif;
             font-weight: 900;
-            font-size: 1rem;
-            color: #fff;
-            flex-shrink: 0
+            font-size: 1.1rem;
+            color: #ffffff;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(34, 64, 150, 0.4);
         }
 
         .testi-name {
             font-family: var(--font-outfit), sans-serif;
-            font-weight: 700;
-            font-size: .9rem;
-            color: var(--primary)
+            font-weight: 800;
+            font-size: 1rem;
+            color: #FFFFFF;
+            letter-spacing: 0.3px;
         }
 
         .testi-role {
-            font-size: .78rem;
-            color: var(--text-muted)
+            font-size: 0.82rem;
+            color: #94A3B8;
+            margin-top: 0.15rem;
         }
 
         .swiper-button-next,
         .swiper-button-prev {
-            color: var(--accent) !important;
-            background: var(--white);
-            border: 1px solid var(--glass-border);
-            width: 50px !important;
-            height: 50px !important;
-            border-radius: 50%;
-            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
-            transition: all 0.3s;
+            color: #62B0E4 !important;
+            background: rgba(8, 32, 62, 0.75) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            width: 54px !important;
+            height: 54px !important;
+            border-radius: 50% !important;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 30 !important;
+        }
+
+        .swiper-button-prev {
+            left: 30px !important;
+        }
+
+        .swiper-button-next {
+            right: 30px !important;
+        }
+
+        @media (max-width: 768px) {
+            .swiper-button-prev {
+                left: 10px !important;
+            }
+            .swiper-button-next {
+                right: 10px !important;
+            }
         }
 
         .swiper-button-next::after,
         .swiper-button-prev::after {
-            font-size: 1.2rem !important;
-            font-weight: bold;
+            font-size: 1.3rem !important;
+            font-weight: 900;
         }
 
         .swiper-button-next:hover,
         .swiper-button-prev:hover {
-            background: var(--accent);
-            color: var(--white) !important;
-            transform: scale(1.05);
+            background: #224096 !important;
+            color: #FFFFFF !important;
+            border-color: #62B0E4 !important;
+            transform: scale(1.08);
+        }
+
+        .swiper-pagination {
+            bottom: 0px !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.25) !important;
+            opacity: 1 !important;
+            width: 8px !important;
+            height: 8px !important;
+            transition: all 0.3s ease !important;
         }
 
         .swiper-pagination-bullet-active {
-            background: var(--accent) !important;
-            width: 24px !important;
+            background: #62B0E4 !important;
+            width: 28px !important;
             border-radius: 4px !important;
         }
 
