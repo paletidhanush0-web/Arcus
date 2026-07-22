@@ -595,7 +595,6 @@ nav.scrolled {
     }
 }
 
-
 /* ── SERVICES ── */
 #services {
     background: linear-gradient(180deg, transparent, rgba(34, 64, 150, .02) 50%, transparent);
@@ -1033,8 +1032,6 @@ nav.scrolled {
     gap: 4rem;
     align-items: start;
 }
-
-.contact-left {}
 
 .contact-info-item {
     display: flex;
@@ -2110,8 +2107,6 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
-
-
 
 /* ── CAREERS PAGE STYLES ── */
 .careers-grid {

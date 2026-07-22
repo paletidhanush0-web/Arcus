@@ -33,10 +33,7 @@ export default function Home() {
     service: "",
     message: "",
   });
-  const [formErrors, setFormErrors] = useState({
-    email: false,
-    phone: false,
-  });
+
   const [formValidStatus, setFormValidStatus] = useState({
     email: "neutral", // neutral, valid, invalid
     phone: "neutral",
