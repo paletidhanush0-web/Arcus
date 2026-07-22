@@ -316,6 +316,7 @@ nav.scrolled {
 .hero-tagline span {
     display: inline-block;
     background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--secondary) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -492,6 +493,7 @@ nav.scrolled {
 .about-heading em {
     font-style: normal;
     background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -529,6 +531,7 @@ nav.scrolled {
     font-size: 2.5rem;
     font-weight: 900;
     background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
@@ -627,6 +630,7 @@ nav.scrolled {
 .section-title em {
     font-style: normal;
     background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1114,6 +1118,7 @@ nav.scrolled {
     color: var(--text-main);
     outline: none;
     transition: all .3s;
+    appearance: none;
     -webkit-appearance: none;
 }
 
@@ -1314,6 +1319,7 @@ nav.scrolled {
 
 .success-popup-title span {
     background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
